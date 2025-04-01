@@ -1,11 +1,14 @@
 import React from "react";
+import Style from "./Header.module.css"
 
 function Header(){
     return(
-        <>
-         <h1>Eventos Lajes</h1>
-         
-        </>
+        <div className={Style.Header}>
+
+         <h1>Eventos</h1>
+         <h2>home</h2>
+
+        </div>
     )
 }
 

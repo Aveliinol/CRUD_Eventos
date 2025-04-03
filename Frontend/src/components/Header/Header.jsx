@@ -6,7 +6,10 @@ function Header(){
         <div className={Style.Header}>
 
          <h1>Eventos</h1>
-         <h2>home</h2>
+          <nav>
+              <link to="/"> Home </link>
+              <link to="/eventos"> eventos </link>
+          </nav>
 
         </div>
     )

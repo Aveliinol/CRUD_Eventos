@@ -1,6 +1,14 @@
-.Footer{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:cadetblue;
-    text-align:center;
-    
+.Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
+    background-color: cadetblue;
+    color: white;
+}
+
+.Footer p {
+    font-size: 1rem ;
+    text-align: justify;
 }

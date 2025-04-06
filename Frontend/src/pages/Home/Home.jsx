@@ -5,19 +5,23 @@ import Footer from "../../components/Footer/Footer";
 import { useState } from "react";
 import style from './home.module.css'
 
-function Home(){
-    
+function Home() {
+
         const [eventos] = useState(database.listarEventos);
-        return(
-        <div className={style.Header}>
-        <Header/>
-        {eventos.map((evento) =>(
-            <li key={evento.id}>
-           <CardEvento key={evento.id} evento={evento}/>
-           </li>
-        ))}
-        <Footer/>
-        </div>
+        return (
+                <div className={style.Home}>
+                        <Header />
+                        <main>
+                                <ul>
+                                        {eventos.map((evento) => (
+                                                <li key={evento.id}>
+                                                        <CardEvento key={evento.id} evento={evento} />
+                                                </li>
+                                        ))}
+                                </ul>
+                        </main>
+                        <Footer />
+                </div>
         )
 }
 

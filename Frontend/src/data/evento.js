@@ -5,7 +5,7 @@ const eventos = [
         id: uuidv4(),
         nome: "Festival de Forro",
         local: "Cidade alta",
-        data: "29/02/2026",
+        data: "2026/02/29",
         imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJPXu8wH7ghMzzuYNXIKoX-lf05uQHnUrebQ&s",
         descricao: "Descrição de evento 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },

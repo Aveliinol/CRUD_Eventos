@@ -1,14 +1,15 @@
 .Footer {
+    text-align: center;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
-    width: 100vw;
-    text-align: center;
-    padding: 1rem;
-    background-color: cadetblue;
+    width: 100%;
+    font-size: 14px;
+    background-color: #4b47b9;
     color: white;
+    
 }
 
 .Footer p {
-    font-size: 1rem ;
-    text-align: justify;
+    font-size: 1rem;
 }

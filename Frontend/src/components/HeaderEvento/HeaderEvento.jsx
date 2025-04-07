@@ -11,7 +11,6 @@ function HeaderEvento(){
               <Link to="/">Home</Link>
               <Link to="/eventos">Eventos</Link>
               <Link to="/cadastrar">Cadastrar Evento</Link>
-              <Link to="/editar">Editar Evento</Link>
           </nav>
         </header>
         

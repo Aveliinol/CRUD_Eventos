@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/cadastrar" element={<CadastrarEvento/>}/>
-        <Route path="/editar" element={<EditarEvento/>}/>
+        <Route path="/editar/:id" element={<EditarEvento/>}/>
       </Routes>
     </Router>
   );

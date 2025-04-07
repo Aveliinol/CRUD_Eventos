@@ -42,7 +42,7 @@ function CadastrarEvento() {
             value={evento.local}
             onChange={(e) => setEvento({ ...evento, local: e.target.value })}
           />
-          <button type="submit">Cadastrar Evento</button>
+          <button type="submit" >Cadastrar Evento</button>
         </form>
       </div>
       <Footer />

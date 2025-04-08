@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import database from '../../data/evento';
 import style from './Eventos.module.css';
 import CardEvento from "../../components/CardEvento/CardEvento";
 import HeaderEvento from "../../components/HeaderEvento/HeaderEvento";
 import Footer from "../../components/Footer/Footer";
+
 
 function Eventos() {
   const [eventos, setEventos] = useState(database.listarEventos());
@@ -13,7 +14,7 @@ function Eventos() {
     database.excluirEvento(id);
     setEventos(database.listarEventos());
   };
-
+ 
   return (
     <>
       <HeaderEvento />

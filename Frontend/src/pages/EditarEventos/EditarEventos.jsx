@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import database from '../../data/evento';
-import {  useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import style from './EditarEvento.module.css';
 import HeaderEvento from '../../components/HeaderEvento/HeaderEvento';
 import Footer from '../../components/Footer/Footer';
@@ -8,7 +8,8 @@ import Footer from '../../components/Footer/Footer';
 function editarEvento() {
   const [evento, setEvento] = useState({ id: '', nome: '', descricao: '', data: '', local: '' });
   const { id } = useParams();
- 
+
+  const navegate = useNavigate();
 
   useEffect(() => {
     const eventoEditado = database.listarEventos().find(event => event.id === id);
@@ -20,6 +21,7 @@ function editarEvento() {
   const editar = (e) => {
     e.preventDefault();
     database.editarEventos(evento.id, evento);
+    navegate('/eventos')
   };
 
   return (

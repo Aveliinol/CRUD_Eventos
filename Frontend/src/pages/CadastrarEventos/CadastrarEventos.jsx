@@ -3,14 +3,17 @@ import database from '../../data/evento';
 import style from './CadastrarEvento.module.css';
 import HeaderEvento from '../../components/HeaderEvento/HeaderEvento';
 import Footer from '../../components/Footer/Footer';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function CadastrarEvento() {
   const [evento, setEvento] = useState({ id: '', nome: '', descricao: '', data: '', local: '' });
 
+  const navegate = useNavigate();
 
   const cadastrar = (e) => {
     e.preventDefault();
     database.criarEventos(evento);
+    navegate('/eventos')
   };
 
   return (
@@ -42,7 +45,7 @@ function CadastrarEvento() {
             value={evento.local}
             onChange={(e) => setEvento({ ...evento, local: e.target.value })}
           />
-          <button type="submit" >Cadastrar Evento</button>
+          <button type="submit"  >Cadastrar Evento</button>
         </form>
       </div>
       <Footer />
